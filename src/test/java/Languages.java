@@ -1,15 +1,16 @@
 public enum Languages {
-    Belorussian ("Беларуская","Увайсці"),
-    Deutsch ("Deutsch", "Einloggen"),
-    English ("English", "Log in"),
-    Spanish ("Español", "Iniciar sesión"),
-    Portuguese ("Português", "Entrar"),
-    Russian ("Русский", "Войти"),
+    Belorussian("Беларуская", "Увайсці"),
+    Deutsch("Deutsch", "Einloggen"),
+    English("English", "Log in"),
+    Spanish("Español", "Iniciar sesión"),
+    Portuguese("Português", "Entrar"),
+    Russian("Русский", "Войти"),
     Ukrainian("Українська", "Увійти"),
-    Chinese ("简体中文", "登录");
+    Chinese("简体中文", "登录");
 
-    private String language;
-    private String expectedText;
+    private final String language;
+    private final String expectedText;
+
     Languages(String language, String expectedText) {
         this.language = language;
         this.expectedText = expectedText;
